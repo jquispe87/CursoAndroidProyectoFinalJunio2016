@@ -43,17 +43,20 @@ public class LoginActivity extends AppCompatActivity {
                 return;
             }
 
+
             IngresarSecond();
         }
     };
 
     private void IngresarSecond() {
         Intent intent = new Intent(LoginActivity.this, PrincipalClienteActivity.class);
+
         startActivity(intent);
+
         finish();
     }
 
     private void setMesage(String mesage) {
-        new AlertDialog.Builder(LoginActivity.this).setTitle("Proyecto Final").setMessage(mesage).setNegativeButton("Aceptar", null).show();
+        new AlertDialog.Builder(LoginActivity.this).setTitle("Proyecto").setMessage(mesage).setNegativeButton("Aceptar", null).show();
     }
 }
