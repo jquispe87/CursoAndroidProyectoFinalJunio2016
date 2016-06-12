@@ -5,7 +5,7 @@
 
     <item
         android:id="@+id/producto_editar_menu_grabar"
-        android:icon="@drawable/ic_action_edit"
+        android:icon="@drawable/ic_save_white_24dp"
         android:title="Grabar"
         app:showAsAction="ifRoom" />
 </menu>

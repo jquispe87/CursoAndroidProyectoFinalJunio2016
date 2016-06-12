@@ -32,15 +32,15 @@ public class RVSegundoAdapter extends RecyclerView.Adapter<RVSegundoAdapter.RVSe
         notifyItemInserted(mLstProducto.size() - 1);
     }
 
-    public void addAll(ArrayList<Producto> mLstProducto) {
+    public void addAll(ArrayList<Producto> lstProducto) {
         int position = mLstProducto.size();
-        mLstProducto.addAll(mLstProducto);
+        mLstProducto.addAll(lstProducto);
         notifyItemRangeInserted(position, mLstProducto.size());
     }
 
-    public void clearAndAddAll(ArrayList<Producto> mLstProducto) {
+    public void clearAndAddAll(ArrayList<Producto> lstProducto) {
         mLstProducto.clear();
-        mLstProducto.addAll(mLstProducto);
+        mLstProducto.addAll(lstProducto);
         notifyDataSetChanged();
     }
 

@@ -43,7 +43,6 @@ public class LoginActivity extends AppCompatActivity {
                 return;
             }
 
-
             IngresarSecond();
         }
     };
@@ -57,6 +56,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void setMesage(String mesage) {
-        new AlertDialog.Builder(LoginActivity.this).setTitle("Proyecto").setMessage(mesage).setNegativeButton("Aceptar", null).show();
+        new AlertDialog.Builder(LoginActivity.this).setTitle("Mensaje").setMessage(mesage).setNegativeButton("Aceptar", null).show();
     }
 }

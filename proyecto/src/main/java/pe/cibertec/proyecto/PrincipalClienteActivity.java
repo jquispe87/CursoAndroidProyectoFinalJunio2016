@@ -52,6 +52,8 @@ public class PrincipalClienteActivity extends AppCompatActivity implements IRVPr
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_principal_cliente_activity);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        getSupportActionBar().setHomeButtonEnabled(true);
+
         toolbar.setSubtitle("CAPTURA PEDIDO");
 
         rvPrimerClientes = (RecyclerView) findViewById(R.id.rvPCACliente);
@@ -91,9 +93,9 @@ public class PrincipalClienteActivity extends AppCompatActivity implements IRVPr
     };
 
     private void IngresarProducto() {
-        Intent intent = new Intent(PrincipalClienteActivity.this, PrincipalProductoActivity.class);
-        startActivity(intent);
-        //finish();
+        Intent intent = new Intent(this, PrincipalProductoActivity.class);
+        this.startActivity(intent);
+        finish();
     }
 
     View.OnClickListener ivPedidoOnClickListener = new View.OnClickListener() {
@@ -128,6 +130,10 @@ public class PrincipalClienteActivity extends AppCompatActivity implements IRVPr
             Intent intent = new Intent(PrincipalClienteActivity.this, ClienteNuevoActivity.class);
             startActivity(intent);
         }
+
+        if (item.getItemId() == android.R.id.home) {
+        }
+
         return super.onOptionsItemSelected(item);
     };
 

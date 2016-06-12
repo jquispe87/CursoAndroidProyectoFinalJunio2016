@@ -26,10 +26,11 @@ public class ProductoNuevoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.producto_nuevo_activity);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_cliente_nuevo_activity);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_producto_nuevo_activity);
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         toolbar.setSubtitle("PRODUCTO NUEVO");
 
         tilPNANombre = (TextInputLayout) findViewById(R.id.tilPNANombre);
